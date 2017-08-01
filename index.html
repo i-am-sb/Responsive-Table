@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=no"/>
+  <title>Basic Table Demo</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="basictable.css" />
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-12">
+			
+			<table id="table">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Age</th>
+						<th>Gender</th>
+						<th>Height</th>
+						<th>Province</th>
+						<th>Sport</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Jill Smith</td>
+						<td>25</td>
+						<td>Female</td>
+						<td>5'4</td>
+						<td>British Columbia</td>
+						<td>Volleyball</td>
+					</tr>
+					<tr>
+						<td>John Stone</td>
+						<td>30</td>
+						<td>Male</td>
+						<td>5'9</td>
+						<td>Ontario</td>
+						<td>Badminton</td>
+					</tr>
+					<tr>
+						<td>Jane Strip</td>
+						<td>29</td>
+						<td>Female</td>
+						<td>5'6</td>
+						<td>Manitoba</td>
+						<td>Hockey</td>
+					</tr>
+					<tr>
+						<td>Gary Mountain</td>
+						<td>21</td>
+						<td>Mail</td>
+						<td>5'8</td>
+						<td>Alberta</td>
+						<td>Curling</td>
+					</tr>
+					<tr>
+						<td>James Camera</td>
+						<td>31</td>
+						<td>Male</td>
+						<td>6'1</td>
+						<td>British Columbia</td>
+						<td>Hiking</td>
+					</tr>
+				</tbody>
+			</table>
+			
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="jquery.basictable.min.js"></script>
+	
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#table').basictable();
+
+			$('#table-breakpoint').basictable({
+				breakpoint: 768
+			});
+
+			$('#table-container-breakpoint').basictable({
+				containerBreakpoint: 485
+			});
+
+			$('#table-swap-axis').basictable({
+				swapAxis: true
+			});
+
+			$('#table-force-off').basictable({
+				forceResponsive: false
+			});
+
+			$('#table-no-resize').basictable({
+				noResize: true
+			});
+
+			$('#table-two-axis').basictable();
+
+			$('#table-max-height').basictable({
+				tableWrapper: true
+			});
+		});
+	</script>
+	
+</body>
+</html>
